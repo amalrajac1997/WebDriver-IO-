@@ -1,0 +1,26 @@
+{
+  "name": "webdriver-io-",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run ./wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amalrajac1997/WebDriver-IO-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amalrajac1997/WebDriver-IO-/issues"
+  },
+  "homepage": "https://github.com/amalrajac1997/WebDriver-IO-#readme",
+  "description": "",
+  "devDependencies": {
+    "@wdio/cli": "^9.8.0",
+    "@wdio/cucumber-framework": "^9.7.3",
+    "@wdio/local-runner": "^9.8.0",
+    "@wdio/spec-reporter": "^9.8.0"
+  }
+}
