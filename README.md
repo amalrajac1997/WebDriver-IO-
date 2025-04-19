@@ -19,20 +19,8 @@ https://webdriver.io/docs/
 
 Best Practices /Folder struture
 -----------------------------------------
+![image](https://github.com/user-attachments/assets/12941982-f3d7-4fa9-aee5-30809b279ce8)
 
-project/
-├── features/                  # Gherkin feature files (if using Cucumber)
-│   ├── login.feature
-├── step-definitions/         # Step definitions (Cucumber)
-│   ├── loginSteps.js
-├── pageobjects/              # Page Object files
-│   ├── login.page.js
-│   ├── dashboard.page.js
-├── commands/                 # Custom browser/element commands
-│   ├── customCommands.js
-├── utils/                    # Helpers like random generators, config utils
-│   ├── dataGenerator.js
-├── wdio.conf.js              # WebdriverIO config
 
 -------------------------------------------------------------------------------
 ❌ Bad Practice              | ✅ Better Way
