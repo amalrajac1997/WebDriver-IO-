@@ -23,10 +23,6 @@ Best Practices /Folder struture
 
 
 -------------------------------------------------------------------------------
-❌ Bad Practice              | ✅ Better Way
-Hardcoding selectors          | Use page objects
-browser.pause(5000)           | Use waitForDisplayed()
-Mixing logic in step files    | Keep logic in page objects / commands
-Using complex CSS selectors   | Use stable attributes like data-testid
+![image](https://github.com/user-attachments/assets/20878a19-7525-4533-8d42-733d1fa417d3)
 
 -------------------------------------------------------------------------------
