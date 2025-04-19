@@ -1,5 +1,5 @@
-Browse below link for practice websites. select any of the dummy websites and practice your coding skills ...
--------------------------------------------------------------------------------------------------------------
+Dummy practice websites
+-------------------------
 https://ultimateqa.com/dummy-automation-websites/
 
 Pre-requesite:
