@@ -5,11 +5,9 @@ const Page = require('./page');
  * sub page containing specific selectors and methods for a specific page
  */
 class LoginPage extends Page {
-    /**
-     * define selectors using getter methods
-     */
+    
     get inputUsername () {
-        return $('#username');
+        return $('#user-name');
     }
 
     get inputPassword () {
@@ -17,24 +15,25 @@ class LoginPage extends Page {
     }
 
     get btnSubmit () {
-        return $('button[type="submit"]');
+        return $('#login-button');
+    }
+    get appLogo(){
+        return $('.app_logo')
     }
 
-    /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
-     */
     async login (username, password) {
-        await this.inputUsername.setValue(username);
-        await this.inputPassword.setValue(password);
-        await this.btnSubmit.click();
+        await this.onSendKeys(this.inputUsername,username);
+        await this.onSendKeys(this.inputPassword,password);
+        await this.onClick(this.btnSubmit);
     }
 
-    /**
-     * overwrite specific options to adapt it to page object
-     */
+    async verifyTheVisibilityOfLogoIconInHomePage(){
+        await this.appLogo.waitForDisplayed();
+    }
+
+    
     open () {
-        return super.open('login');
+        return super.open();
     }
 }
 
