@@ -15,7 +15,7 @@ Commands to install webdriver.IO
 
 Documentation
 ------------------------------------
-https://webdriver.io/docs/
+[https://webdriver.io/docs/](https://webdriver.io/docs/api/)
 
 Best Practices /Folder struture
 -----------------------------------------
