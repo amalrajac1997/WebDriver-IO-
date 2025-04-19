@@ -9,9 +9,9 @@ Pre-requesite:
 
 Commands to install webdriver.IO
 ------------------------------------
-npm init -y
-npm install --save-dev @wdio/cli
-npx wdio config
+1. npm init -y
+2. npm install --save-dev @wdio/cli
+3. npx wdio config
 
 
 
