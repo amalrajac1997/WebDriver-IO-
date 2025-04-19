@@ -1,23 +1,15 @@
 const { browser } = require('@wdio/globals')
 
+/**
+* main page object containing all methods, selectors and functionality
+* that is shared across all page objects
+*/
 module.exports = class Page {
-    open () {
-        return browser.url(`/`)
-    }
-
-    async onClick(WebElement){
-        try{
-            WebElement.click();
-        }catch(err){
-           throw new Error("Unable to click on Web Element") 
-        }
-    }
-
-    async onSendKeys(WebElement,value){
-        try{
-            WebElement.setValue(value);
-        }catch(err){
-            throw new Error("Unable to send keys to Web Element")
-        }
+    /**
+    * Opens a sub page of the page
+    * @param path path of the sub page (e.g. /path/to/page.html)
+    */
+    open (path) {
+        return browser.url(`https://the-internet.herokuapp.com/${path}`)
     }
 }

@@ -1,6 +1,6 @@
 const { Given, When, Then } = require('@wdio/cucumber-framework');
 const { expect, $ } = require('@wdio/globals')
-const LoginPage = require('../pageobjects/login.page');
+const LoginPage = require('../../pageobjects/login.page');
 
 const {standardUser,Password}=process.env
 
