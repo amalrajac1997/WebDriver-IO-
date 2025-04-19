@@ -24,6 +24,25 @@ browser.addCommand("clickElement", async function () {
     }
     console.log(`✅ Cleared value on ${await this.selector}`);
   }, true);
+
+  browser.addCommand("hoverOnElement", async function () {
+    await this.waitForDisplayed({ timeout: 5000 });
+    const location = await this.getLocation();
+        await browser.performActions([
+            {
+                type: 'pointer',
+                id: 'mouse',
+                parameters: { pointerType: 'mouse' },
+                actions: [
+                    { type: 'pointerMove', duration: 100, x: Math.floor(location.x + 5), y: Math.floor(location.y + 5) },
+                    { type: 'pause', duration: 500 } // Optional pause to simulate human-like hover
+                ]
+            }
+        ]);
+        // Clean up actions (always a good practice)
+        await browser.releaseActions();
+    console.log(`✅ Hovered on: ${await this.selector}`);
+  });
   
 
     browser.addCommand("getElementText", async function () {

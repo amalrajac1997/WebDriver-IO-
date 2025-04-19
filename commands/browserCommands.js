@@ -48,3 +48,9 @@ browser.addCommand("loginAsVisualUser", async function () {
   await loginAsUser(visualUser, Password);
   console.log("✅ Logged in as visual user");
 });
+
+browser.addCommand("gotoInventory", async function () {
+  await browser.url("/inventory.html");
+  console.log("✅ Navigated to inventory page");
+});
+
